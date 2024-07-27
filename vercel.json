@@ -1,0 +1,22 @@
+{
+  "builds": [
+    {
+      "src": "remove_bg/wsgi.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "remover/static/src/css/styles.css",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "remover/static/src/css/styles.css"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "remove_bg/wsgi.py"
+    }
+  ]
+}
