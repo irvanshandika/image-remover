@@ -7,7 +7,7 @@ SECRET_KEY = 'django-insecure-l_ii4_+k*=z9$5%xj$#w*l_j%2ro4z(@=^28!e$^5^p&4k6(v+
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.domcloud.dev']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
