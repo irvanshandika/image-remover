@@ -5,13 +5,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Remove Background{% endblock %}</title>
+    <title>{% block title %}{% endblock %} - Remove Background</title>
     <link rel="stylesheet" href="{% static 'src/css/styles.css' %}" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="dark:bg-gray-800">
+    {% include 'src/Navbar.html' %}
     {% block content %}
     {% endblock %}
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
 </body>
 
 </html>
