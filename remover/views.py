@@ -14,7 +14,7 @@ def home(request):
     return render(request, 'pages/home.html')
 
 
-def removebg(request):
+def removebackground(request):
     if request.method == 'POST' and request.FILES['image']:
         image = request.FILES['image']
 
