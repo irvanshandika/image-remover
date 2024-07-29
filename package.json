@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "python manage.py runserver 5000"
+    "dev": "python manage.py runserver 5000",
+    "build:static": "python manage.py collectstatic"
   },
   "keywords": [],
   "author": "",
