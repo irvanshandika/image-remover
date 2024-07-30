@@ -14,7 +14,7 @@ def home(request):
     return render(request, 'pages/home.html')
 
 
-def documents(request):
+def docs(request):
     return render(request, 'pages/docs/docs.html')
 
 
