@@ -3,12 +3,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %} - Remove Background</title>
-    <link rel="stylesheet" href="{% static 'src/css/styles.css' %}" />
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet" />
+    {% include 'src/SEO.html' %}
 </head>
 
 <body class="dark:bg-gray-800 font-sora">
@@ -16,12 +12,6 @@
     {% block content %}
     {% endblock %}
     {% include 'src/Footer.html' %}
-    <script src="{% static 'src/scripts/script.js' %}"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-11YS73K066"></script>
-    <script defer data-domain="toolskuy.domcloud.dev" src="https://plausible.io/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
-    <script src="https://apis.google.com/js/platform.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
 </body>
 
 </html>

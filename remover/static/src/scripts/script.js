@@ -6,6 +6,15 @@ gtag("js", new Date());
 
 gtag("config", "G-11YS73K066");
 
+function downloadImage() {
+  const format = document.getElementById("formatSelect").value;
+  if (format) {
+    window.location.href = "{% url 'download' format='placeholder' %}".replace("placeholder", format);
+  } else {
+    alert("Please select a format");
+  }
+}
+
 document.addEventListener("DOMContentLoaded", (event) => {
   const dropZone = document.getElementById("drop-zone");
   const fileInput = document.getElementById("image");
