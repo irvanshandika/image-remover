@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "python manage.py runserver 5000",
-    "build:static": "python manage.py collectstatic"
+    "build:static": "python manage.py collectstatic",
+    "watch": "cd remover/src_static && npm run watch"
   },
   "keywords": [],
   "author": "",

@@ -5,7 +5,7 @@
             <img src="{% static 'src/images/Logo.png' %}" class="h-8" alt="Flowbite Logo" fetchpriority="high" />
         </a>
         <button @click="isOpen = !isOpen" type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
             aria-controls="navbar-default" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -18,27 +18,26 @@
                 class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
                 <li>
                     <a href="{% url 'home' %}"
-                        class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
+                        class="block py-2 px-3 rounded md:border-0 md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent">Home</a>
                 </li>
                 <li>
                     <button id="dropdownFiturButton" data-dropdown-toggle="dropdownFitur"
-                        class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                        class="block py-2 px-3 rounded md:border-0 md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
                         type="button">
                         Fitur
                     </button>
 
                     <div id="dropdownFitur"
-                        class="z-10 hidden divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownFiturButton">
+                        class="z-10 hidden divide-y divide-gray-100 rounded-lg shadow w-44 bg-gray-700">
+                        <ul class="py-2 text-sm text-gray-200" aria-labelledby="dropdownFiturButton">
                             <li>
                                 <a href="{% url 'removebackground' %}"
-                                    class="block px-4 py-2 dark:hover:bg-gray-600 dark:text-gray-100 dark:hover:text-white">
+                                    class="block px-4 py-2 hover:bg-gray-600 text-gray-100 hover:text-white">
                                     Remove Background
                                 </a>
                             </li>
                             <li>
-                                <a href="#"
-                                    class="block px-4 py-2 dark:hover:bg-gray-600 dark:text-gray-100 dark:hover:text-white">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-600 text-gray-100 hover:text-white">
                                     Coming Soon
                                 </a>
                             </li>
@@ -47,28 +46,27 @@
                 </li>
                 <li>
                     <button id="dropdownSocialMediaButton" data-dropdown-toggle="dropdownSocialMedia"
-                        class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                        class="block py-2 px-3 rounded md:border-0 md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
                         type="button">
                         Social Media
                     </button>
 
                     <div id="dropdownSocialMedia"
-                        class="z-10 hidden divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                            aria-labelledby="dropdownSocialMediaButton">
+                        class="z-10 hidden divide-y divide-gray-100 rounded-lg shadow w-44 bg-gray-700">
+                        <ul class="py-2 text-sm text-gray-200" aria-labelledby="dropdownSocialMediaButton">
                             <li>
                                 <a href="https://www.facebook.com/shandika.irvan/"
-                                    class="block px-4 py-2 dark:hover:bg-gray-600 dark:text-gray-100 dark:hover:text-white"
+                                    class="block px-4 py-2 hover:bg-gray-600 text-gray-100 hover:text-white"
                                     target="_blank">Facebook</a>
                             </li>
                             <li>
                                 <a href="https://www.instagram.com/irvan_shandika/"
-                                    class="block px-4 py-2 dark:hover:bg-gray-600 dark:text-gray-100 dark:hover:text-white"
+                                    class="block px-4 py-2 hover:bg-gray-600 text-gray-100 hover:text-white"
                                     target="_blank">Instagram</a>
                             </li>
                             <li>
                                 <a href="https://www.youtube.com/@justcallmeirvan"
-                                    class="block px-4 py-2 dark:hover:bg-gray-600 dark:text-gray-100 dark:hover:text-white"
+                                    class="block px-4 py-2 hover:bg-gray-600 text-gray-100 hover:text-white"
                                     target="_blank">Youtube</a>
                                 <div class="hidden">
                                     <div class="g-ytsubscribe" data-channelid="UCRPH_MP4WE2WeKiwd4f4EAQ"
